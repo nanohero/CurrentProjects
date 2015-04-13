@@ -28,71 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTitle));
             this.name = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboClothes = new System.Windows.Forms.ComboBox();
             this.namLbl = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.lblParts = new System.Windows.Forms.Label();
+            this.cboParts = new System.Windows.Forms.ComboBox();
+            this.lblClothes = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
+            this.chkMale = new System.Windows.Forms.CheckBox();
+            this.chkFemale = new System.Windows.Forms.CheckBox();
+            this.lblColor = new System.Windows.Forms.Label();
+            this.cboColor = new System.Windows.Forms.ComboBox();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(55, 299);
+            resources.ApplyResources(this.name, "name");
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(108, 23);
-            this.name.TabIndex = 0;
-            this.name.Text = "Search";
             this.name.UseVisualStyleBackColor = true;
-            this.name.Click += new System.EventHandler(this.name_Click);
+          
             // 
-            // textBox1
+            // cboClothes
             // 
-            this.textBox1.Location = new System.Drawing.Point(182, 299);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "illuminus coat"});
-            this.comboBox1.Location = new System.Drawing.Point(87, 184);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 2;
+            this.cboClothes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboClothes.FormattingEnabled = true;
+            this.cboClothes.Items.AddRange(new object[] {
+            resources.GetString("cboClothes.Items"),
+            resources.GetString("cboClothes.Items1")});
+            resources.ApplyResources(this.cboClothes, "cboClothes");
+            this.cboClothes.Name = "cboClothes";
+            this.cboClothes.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // namLbl
             // 
-            this.namLbl.AutoSize = true;
-            this.namLbl.Location = new System.Drawing.Point(39, 36);
+            resources.ApplyResources(this.namLbl, "namLbl");
             this.namLbl.Name = "namLbl";
-            this.namLbl.Size = new System.Drawing.Size(90, 13);
-            this.namLbl.TabIndex = 3;
-            this.namLbl.Text = "Character Name: ";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(231, 123);
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnEdit
+            // 
+            resources.ApplyResources(this.btnEdit, "btnEdit");
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // lblParts
+            // 
+            resources.ApplyResources(this.lblParts, "lblParts");
+            this.lblParts.Name = "lblParts";
+            // 
+            // cboParts
+            // 
+            this.cboParts.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboParts.FormattingEnabled = true;
+            this.cboParts.Items.AddRange(new object[] {
+            resources.GetString("cboParts.Items"),
+            resources.GetString("cboParts.Items1"),
+            resources.GetString("cboParts.Items2"),
+            resources.GetString("cboParts.Items3")});
+            resources.ApplyResources(this.cboParts, "cboParts");
+            this.cboParts.Name = "cboParts";
+            // 
+            // lblClothes
+            // 
+            resources.ApplyResources(this.lblClothes, "lblClothes");
+            this.lblClothes.Name = "lblClothes";
+            // 
+            // lblGender
+            // 
+            resources.ApplyResources(this.lblGender, "lblGender");
+            this.lblGender.Name = "lblGender";
+            // 
+            // chkMale
+            // 
+            resources.ApplyResources(this.chkMale, "chkMale");
+            this.chkMale.Name = "chkMale";
+            this.chkMale.UseVisualStyleBackColor = true;
+            // 
+            // chkFemale
+            // 
+            resources.ApplyResources(this.chkFemale, "chkFemale");
+            this.chkFemale.Name = "chkFemale";
+            this.chkFemale.UseVisualStyleBackColor = true;
+            // 
+            // lblColor
+            // 
+            resources.ApplyResources(this.lblColor, "lblColor");
+            this.lblColor.Name = "lblColor";
+            // 
+            // cboColor
+            // 
+            this.cboColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.cboColor.FormattingEnabled = true;
+            resources.ApplyResources(this.cboColor, "cboColor");
+            this.cboColor.Name = "cboColor";
+           
+            this.cboColor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cboColor_MouseClick);
+            // 
             // frmTitle
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AcceptButton = this.btnEdit;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 377);
+            this.Controls.Add(this.lblColor);
+            this.Controls.Add(this.cboColor);
+            this.Controls.Add(this.chkFemale);
+            this.Controls.Add(this.chkMale);
+            this.Controls.Add(this.lblGender);
+            this.Controls.Add(this.lblClothes);
+            this.Controls.Add(this.cboParts);
+            this.Controls.Add(this.lblParts);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.namLbl);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cboClothes);
             this.Controls.Add(this.name);
             this.Name = "frmTitle";
-            this.Text = "Psu Mod Edit";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,10 +163,19 @@
         #endregion
 
         private System.Windows.Forms.Button name;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cboClothes;
         private System.Windows.Forms.Label namLbl;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Label lblParts;
+        private System.Windows.Forms.ComboBox cboParts;
+        private System.Windows.Forms.Label lblClothes;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.CheckBox chkMale;
+        private System.Windows.Forms.CheckBox chkFemale;
+        private System.Windows.Forms.Label lblColor;
+        private System.Windows.Forms.ComboBox cboColor;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
