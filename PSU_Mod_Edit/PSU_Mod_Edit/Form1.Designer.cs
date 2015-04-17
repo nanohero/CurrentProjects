@@ -52,6 +52,7 @@
             this.chkMaleParts = new System.Windows.Forms.CheckBox();
             this.chkFemaleParts = new System.Windows.Forms.CheckBox();
             this.chkAotiColors = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // name
@@ -141,6 +142,7 @@
             this.cboColor.FormattingEnabled = true;
             resources.ApplyResources(this.cboColor, "cboColor");
             this.cboColor.Name = "cboColor";
+            this.cboColor.SelectedIndexChanged += new System.EventHandler(this.cboColor_SelectedIndexChanged);
             this.cboColor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cboColor_MouseClick);
             // 
             // label1
@@ -194,11 +196,21 @@
             this.chkAotiColors.UseVisualStyleBackColor = true;
             this.chkAotiColors.CheckedChanged += new System.EventHandler(this.chkAotiColors_CheckedChanged);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.comboBox1.FormattingEnabled = true;
+            resources.ApplyResources(this.comboBox1, "comboBox1");
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
+            // 
             // frmTitle
             // 
             this.AcceptButton = this.btnEdit;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.chkAotiColors);
             this.Controls.Add(this.chkFemaleParts);
             this.Controls.Add(this.chkMaleParts);
@@ -253,6 +265,7 @@
         private System.Windows.Forms.CheckBox chkMaleParts;
         private System.Windows.Forms.CheckBox chkFemaleParts;
         private System.Windows.Forms.CheckBox chkAotiColors;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

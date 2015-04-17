@@ -28,7 +28,7 @@ namespace PSU_Mod_Edit
         [DllImport("kernel32.dll",SetLastError = true)]
         static extern bool WriteProcessMemory(int hProcess, int lpBaseAdress, byte[] lpBuffer, int dwSize,ref int lpNumberOfBytesWritten );
         Process psu = Process.GetProcessesByName("PsuIlluminus_Clementine")[0];
-        int byteValue=0;
+        int byteValue=0x15;
         string line;
      string [] malesClothes=new string[37];
      string[] malesClothes2 = new string[37];
@@ -58,14 +58,183 @@ namespace PSU_Mod_Edit
             {
                 
             }
-               
+            if (chkAotiColors.Checked==true)
+            {
+                ByteValueChangeAoti();
+            }
+            
+        }
+
+        private void ByteValueChangeAoti()
+        {
+            if (cboClothes.SelectedItem.ToString() ==aotiColors[0])
+            {
+                byteValue = 0x65;
+            }
+            if (cboClothes.SelectedItem.ToString() == aotiColors[1])
+            {
+                byteValue = 0x66;
+            }
+            if (cboClothes.SelectedItem.ToString() == aotiColors[2])
+            {
+                byteValue = 0x67;
+            }
+            if (cboClothes.SelectedItem.ToString() == aotiColors[3])
+            {
+                byteValue = 0x68;
+            }
+            if (cboClothes.SelectedItem.ToString() == aotiColors[4])
+            {
+                byteValue = 0x69;
+            }
+            if (cboClothes.SelectedItem.ToString() == aotiColors[5])
+            {
+                byteValue = 0x6A;
+            }
+            if (cboClothes.SelectedItem.ToString() == aotiColors[6])
+            {
+                byteValue = 0x6B;
+            }
+            if (cboClothes.SelectedItem.ToString() == aotiColors[7])
+            {
+                byteValue = 0x6C;
+            }
+            if (cboClothes.SelectedItem.ToString() == aotiColors[8])
+            {
+                byteValue = 0x6D;
+            }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[9])
+            {
+                byteValue = 0x6E;
+            }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[10])
+                {
+                    byteValue = 0x6F;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[11])
+                {
+                    byteValue = 0x70;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[12])
+                {
+                    byteValue = 0x71;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[13])
+                {
+                    byteValue = 0x72;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[14])
+                {
+                    byteValue = 0x73;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[15])
+                {
+                    byteValue = 0x74;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[16])
+                {
+                    byteValue = 0x75;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[17])
+                {
+                    byteValue = 0x76;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[18])
+                {
+                    byteValue = 0x77;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[19])
+                {
+                    byteValue = 0x78;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[20])
+                {
+                    byteValue = 0x79;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[21])
+                {
+                    byteValue = 0x7A;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[22])
+                {
+                    byteValue = 0x7B;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[23])
+                {
+                    byteValue = 0x7C;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[24])
+                {
+                    byteValue = 0x7D;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[25])
+                {
+                    byteValue = 0x7E;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[26])
+                {
+                    byteValue = 0x7F;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[27])
+                {
+                    byteValue = 0x80;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[28])
+                {
+                    byteValue = 0x81;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[29])
+                {
+                    byteValue = 0x82;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[30])
+                {
+                    byteValue = 0x83;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[31])
+                {
+                    byteValue = 0x84;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[32])
+                {
+                    byteValue = 0x85;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[33])
+                {
+                    byteValue = 0x86;
+                }
+                if (cboClothes.SelectedItem.ToString() == aotiColors[34])
+                {
+                    byteValue = 0x87;
+                }
         }
 
         private void ByteValueChangeMale()
         {
+            /*
+              int i = 0;
+            System.IO.StreamReader file = new System.IO.StreamReader(@"male_codes.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+              malesClothes2[i] = line;
+                i++;
+               
+            }
+            file.Close();
+            for (int j = 0; i < 37; j++)
+            {
+                if (cboClothes.SelectedItem.ToString()==malesClothes[i])
+                {
+                    byteValue = Convert.ToInt32(malesClothes2[i]);
+                    MessageBox.Show(byteValue.ToString());
+                }
+            }
+             */
+            
             if (cboClothes.SelectedItem.ToString() == malesClothes[0])
             {
                 byteValue = 00;
+               
             }
             if (cboClothes.SelectedItem.ToString() == malesClothes[1])
             {
@@ -206,38 +375,52 @@ namespace PSU_Mod_Edit
             if (cboClothes.SelectedItem.ToString() == malesClothes[35])
             {
                 byteValue = 0x23;
-            }               
+            }
+             
         }
 
        
         private void button2_Click(object sender, EventArgs e)
         {
-           
+            
+            Process psu = Process.GetProcessesByName("PsuIlluminus_Clementine")[0];
             IntPtr Handle = OpenProcess(0x01F0FFF, false, psu.Id);
             int bytesWritten = 0;
             byte[] buffer = new byte[1];
-            buffer[0] =(byte)Convert.ToInt32(byteValue);          
+            buffer[0] =(byte)Convert.ToInt32(byteValue);
+            try
+            {
+                if (cboParts.SelectedItem.ToString() == "top")
+                {
 
-            if (cboParts.SelectedItem.ToString() == "top")
-            {
-                WriteProcessMemory((int)Handle, 0x057E9B05, buffer, buffer.Length, ref bytesWritten);                       
-            }           
-            if (cboParts.SelectedItem.ToString() == "bottoms")
-            {
-                WriteProcessMemory((int)Handle, 0x057E9B09, buffer, buffer.Length, ref bytesWritten);                             
+                    WriteProcessMemory((int)Handle, 0x0FA69B05, buffer, buffer.Length, ref bytesWritten);
+                }
+                if (cboParts.SelectedItem.ToString() == "bottoms")
+                {
+                    WriteProcessMemory((int)Handle, 0x0FA69B09, buffer, buffer.Length, ref bytesWritten);
+                }
+                if (cboParts.SelectedItem.ToString() == "shoes")
+                {
+                    WriteProcessMemory((int)Handle, 0x0FA69B0D, buffer, buffer.Length, ref bytesWritten);
+                }  
             }
-            if (cboParts.SelectedItem.ToString() == "shoes")
+            catch (Exception ex)
             {
-                WriteProcessMemory((int)Handle, 0x057E9B0D, buffer, buffer.Length, ref bytesWritten);                             
-            }          
+
+                MessageBox.Show("You don't have permision to write to the memory");
+            }
+                    
         }            
         private void cboColor_MouseClick(object sender, MouseEventArgs e)
         {
             ColorDialog colorDlg = new ColorDialog();                
             if (colorDlg.ShowDialog()==DialogResult.OK)
             {
-                cboColor.BackColor = colorDlg.Color;
+              
+               this.BackColor = colorDlg.Color;
+                
             }
+
         }
         private void chkMale_CheckedChanged(object sender, EventArgs e)
         {
@@ -251,6 +434,7 @@ namespace PSU_Mod_Edit
             {
               clothesArray[i] = line;
                 i++;
+               
             }
             file.Close();
             BindingSource theBindingSource = new BindingSource();
@@ -272,6 +456,38 @@ namespace PSU_Mod_Edit
         private void chkAotiColors_CheckedChanged(object sender, EventArgs e)
         {
             AddClothes(@"aoti_colors.txt",aotiColors);
+        }
+
+        private void cboColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDlg = new ColorDialog();
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
+
+                lblClothes.ForeColor = colorDlg.Color;
+                lblColor.ForeColor = colorDlg.Color;
+                lblGender.ForeColor = colorDlg.Color;
+                lblParts.ForeColor = colorDlg.Color;
+                namLbl.ForeColor = colorDlg.Color;
+                label1.ForeColor = colorDlg.Color;
+                label2.ForeColor = colorDlg.Color;
+                label3.ForeColor = colorDlg.Color;
+                chkAotiColors.ForeColor = colorDlg.Color;
+                chkFemale.ForeColor = colorDlg.Color;
+                chkFemaleParts.ForeColor = colorDlg.Color;
+                chkMaleParts.ForeColor = colorDlg.Color;
+                chkMale.ForeColor = colorDlg.Color;
+            }
         }         
     }
 }
