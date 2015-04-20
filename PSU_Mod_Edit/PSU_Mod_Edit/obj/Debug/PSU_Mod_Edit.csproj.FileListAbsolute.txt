@@ -31,3 +31,4 @@ C:\Users\corey\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\De
 C:\Users\corey\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Debug\PSU_Mod_Edit.csproj.GenerateResource.Cache
 C:\Users\corey\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Debug\af\PSU_Mod_Edit.resources.dll
 C:\Users\corey\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Debug\PSU_Mod_Edit.csprojResolveAssemblyReference.cache
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Debug\PSU_Mod_Edit.FrmSendReports.resources

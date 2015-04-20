@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTitle));
-            this.name = new System.Windows.Forms.Button();
             this.cboClothes = new System.Windows.Forms.ComboBox();
-            this.namLbl = new System.Windows.Forms.Label();
-            this.btnStart = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.lblParts = new System.Windows.Forms.Label();
             this.cboParts = new System.Windows.Forms.ComboBox();
@@ -40,26 +38,22 @@
             this.lblGender = new System.Windows.Forms.Label();
             this.chkMale = new System.Windows.Forms.CheckBox();
             this.chkFemale = new System.Windows.Forms.CheckBox();
-            this.lblColor = new System.Windows.Forms.Label();
-            this.cboColor = new System.Windows.Forms.ComboBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTop = new System.Windows.Forms.TextBox();
-            this.txtBottom = new System.Windows.Forms.TextBox();
-            this.txtShoes = new System.Windows.Forms.TextBox();
             this.chkMaleParts = new System.Windows.Forms.CheckBox();
             this.chkFemaleParts = new System.Windows.Forms.CheckBox();
             this.chkAotiColors = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.picColorWindow = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.picColorText = new System.Windows.Forms.PictureBox();
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clementineSiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sendReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.picColorWindow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picColorText)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // name
-            // 
-            resources.ApplyResources(this.name, "name");
-            this.name.Name = "name";
-            this.name.UseVisualStyleBackColor = true;
             // 
             // cboClothes
             // 
@@ -71,24 +65,12 @@
             this.cboClothes.Name = "cboClothes";
             this.cboClothes.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // namLbl
-            // 
-            resources.ApplyResources(this.namLbl, "namLbl");
-            this.namLbl.Name = "namLbl";
-            // 
-            // btnStart
-            // 
-            resources.ApplyResources(this.btnStart, "btnStart");
-            this.btnStart.Name = "btnStart";
-            this.btnStart.UseVisualStyleBackColor = true;
-            this.btnStart.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnEdit
             // 
             resources.ApplyResources(this.btnEdit, "btnEdit");
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.button2_Click);
+        
             // 
             // lblParts
             // 
@@ -131,50 +113,6 @@
             this.chkFemale.UseVisualStyleBackColor = true;
             this.chkFemale.CheckedChanged += new System.EventHandler(this.chkFemale_CheckedChanged);
             // 
-            // lblColor
-            // 
-            resources.ApplyResources(this.lblColor, "lblColor");
-            this.lblColor.Name = "lblColor";
-            // 
-            // cboColor
-            // 
-            this.cboColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
-            this.cboColor.FormattingEnabled = true;
-            resources.ApplyResources(this.cboColor, "cboColor");
-            this.cboColor.Name = "cboColor";
-            this.cboColor.SelectedIndexChanged += new System.EventHandler(this.cboColor_SelectedIndexChanged);
-            this.cboColor.MouseClick += new System.Windows.Forms.MouseEventHandler(this.cboColor_MouseClick);
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // txtTop
-            // 
-            resources.ApplyResources(this.txtTop, "txtTop");
-            this.txtTop.Name = "txtTop";
-            // 
-            // txtBottom
-            // 
-            resources.ApplyResources(this.txtBottom, "txtBottom");
-            this.txtBottom.Name = "txtBottom";
-            // 
-            // txtShoes
-            // 
-            resources.ApplyResources(this.txtShoes, "txtShoes");
-            this.txtShoes.Name = "txtShoes";
-            // 
             // chkMaleParts
             // 
             resources.ApplyResources(this.chkMaleParts, "chkMaleParts");
@@ -196,32 +134,62 @@
             this.chkAotiColors.UseVisualStyleBackColor = true;
             this.chkAotiColors.CheckedChanged += new System.EventHandler(this.chkAotiColors_CheckedChanged);
             // 
-            // comboBox1
+            // picColorWindow
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
-            this.comboBox1.FormattingEnabled = true;
-            resources.ApplyResources(this.comboBox1, "comboBox1");
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
-            this.comboBox1.Click += new System.EventHandler(this.comboBox1_Click);
+            this.picColorWindow.BackColor = System.Drawing.SystemColors.Control;
+            this.picColorWindow.Image = global::PSU_Mod_Edit.Properties.Resources.picutre_12;
+            resources.ApplyResources(this.picColorWindow, "picColorWindow");
+            this.picColorWindow.Name = "picColorWindow";
+            this.picColorWindow.TabStop = false;
+            this.picColorWindow.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // picColorText
+            // 
+            this.picColorText.BackColor = System.Drawing.SystemColors.Control;
+            this.picColorText.Image = global::PSU_Mod_Edit.Properties.Resources.picutre_12;
+            resources.ApplyResources(this.picColorText, "picColorText");
+            this.picColorText.Name = "picColorText";
+            this.picColorText.TabStop = false;
+            this.picColorText.Click += new System.EventHandler(this.picColorText_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informationToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Name = "menuStrip1";
+            // 
+            // informationToolStripMenuItem
+            // 
+            this.informationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clementineSiteToolStripMenuItem,
+            this.sendReportsToolStripMenuItem});
+            this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
+            resources.ApplyResources(this.informationToolStripMenuItem, "informationToolStripMenuItem");
+            // 
+            // clementineSiteToolStripMenuItem
+            // 
+            this.clementineSiteToolStripMenuItem.Name = "clementineSiteToolStripMenuItem";
+            resources.ApplyResources(this.clementineSiteToolStripMenuItem, "clementineSiteToolStripMenuItem");
+            this.clementineSiteToolStripMenuItem.Click += new System.EventHandler(this.clementineSiteToolStripMenuItem_Click);
+            // 
+            // sendReportsToolStripMenuItem
+            // 
+            this.sendReportsToolStripMenuItem.Name = "sendReportsToolStripMenuItem";
+            resources.ApplyResources(this.sendReportsToolStripMenuItem, "sendReportsToolStripMenuItem");
+            this.sendReportsToolStripMenuItem.Click += new System.EventHandler(this.sendReportsToolStripMenuItem_Click);
             // 
             // frmTitle
             // 
             this.AcceptButton = this.btnEdit;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.comboBox1);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.picColorText);
+            this.Controls.Add(this.picColorWindow);
             this.Controls.Add(this.chkAotiColors);
             this.Controls.Add(this.chkFemaleParts);
             this.Controls.Add(this.chkMaleParts);
-            this.Controls.Add(this.txtShoes);
-            this.Controls.Add(this.txtBottom);
-            this.Controls.Add(this.txtTop);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblColor);
-            this.Controls.Add(this.cboColor);
             this.Controls.Add(this.chkFemale);
             this.Controls.Add(this.chkMale);
             this.Controls.Add(this.lblGender);
@@ -229,12 +197,16 @@
             this.Controls.Add(this.cboParts);
             this.Controls.Add(this.lblParts);
             this.Controls.Add(this.btnEdit);
-            this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.namLbl);
             this.Controls.Add(this.cboClothes);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmTitle";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.frmTitle_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picColorWindow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picColorText)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,10 +214,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button name;
         private System.Windows.Forms.ComboBox cboClothes;
-        private System.Windows.Forms.Label namLbl;
-        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Label lblParts;
         private System.Windows.Forms.ComboBox cboParts;
@@ -253,19 +222,18 @@
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.CheckBox chkMale;
         private System.Windows.Forms.CheckBox chkFemale;
-        private System.Windows.Forms.Label lblColor;
-        private System.Windows.Forms.ComboBox cboColor;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTop;
-        private System.Windows.Forms.TextBox txtBottom;
-        private System.Windows.Forms.TextBox txtShoes;
         private System.Windows.Forms.CheckBox chkMaleParts;
         private System.Windows.Forms.CheckBox chkFemaleParts;
         private System.Windows.Forms.CheckBox chkAotiColors;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox picColorWindow;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.PictureBox picColorText;
+        private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clementineSiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sendReportsToolStripMenuItem;
     }
 }
 

@@ -28,6 +28,7 @@ namespace PSU_Mod_Edit
         [DllImport("kernel32.dll",SetLastError = true)]
         static extern bool WriteProcessMemory(int hProcess, int lpBaseAdress, byte[] lpBuffer, int dwSize,ref int lpNumberOfBytesWritten );
         Process psu = Process.GetProcessesByName("PsuIlluminus_Clementine")[0];
+        FrmSendReports fsr = new FrmSendReports();
         int byteValue=0x15;
         string line;
      string [] malesClothes=new string[37];
@@ -103,35 +104,35 @@ namespace PSU_Mod_Edit
             {
                 byteValue = 0x6D;
             }
-                if (cboClothes.SelectedItem.ToString() == aotiColors[9])
+            if (cboClothes.SelectedItem.ToString() == aotiColors[9])
             {
-                byteValue = 0x6E;
+                byte Value = 0x6E;
             }
-                if (cboClothes.SelectedItem.ToString() == aotiColors[10])
+            if (cboClothes.SelectedItem.ToString() == aotiColors[10])
                 {
                     byteValue = 0x6F;
                 }
-                if (cboClothes.SelectedItem.ToString() == aotiColors[11])
+            if (cboClothes.SelectedItem.ToString() == aotiColors[11])
                 {
                     byteValue = 0x70;
                 }
-                if (cboClothes.SelectedItem.ToString() == aotiColors[12])
+            if (cboClothes.SelectedItem.ToString() == aotiColors[12])
                 {
                     byteValue = 0x71;
                 }
-                if (cboClothes.SelectedItem.ToString() == aotiColors[13])
+            if (cboClothes.SelectedItem.ToString() == aotiColors[13])
                 {
                     byteValue = 0x72;
                 }
-                if (cboClothes.SelectedItem.ToString() == aotiColors[14])
+           if (cboClothes.SelectedItem.ToString() == aotiColors[14])
                 {
                     byteValue = 0x73;
                 }
-                if (cboClothes.SelectedItem.ToString() == aotiColors[15])
+          if (cboClothes.SelectedItem.ToString() == aotiColors[15])
                 {
                     byteValue = 0x74;
                 }
-                if (cboClothes.SelectedItem.ToString() == aotiColors[16])
+         if (cboClothes.SelectedItem.ToString() == aotiColors[16])
                 {
                     byteValue = 0x75;
                 }
@@ -211,26 +212,40 @@ namespace PSU_Mod_Edit
 
         private void ByteValueChangeMale()
         {
-            /*
+            
+            
               int i = 0;
             System.IO.StreamReader file = new System.IO.StreamReader(@"male_codes.txt");
             while ((line = file.ReadLine()) != null)
             {
               malesClothes2[i] = line;
                 i++;
+                
                
             }
             file.Close();
-            for (int j = 0; i < 37; j++)
+
+     
+            for (int j = 0; j < 37; j++)
             {
-                if (cboClothes.SelectedItem.ToString()==malesClothes[i])
+                if (cboClothes.SelectedItem.ToString() == malesClothes[j])
                 {
-                    byteValue = Convert.ToInt32(malesClothes2[i]);
-                    MessageBox.Show(byteValue.ToString());
+                    try
+                    {
+                        byteValue = Convert.ToInt32(malesClothes2[j]);
+                    }
+                    catch (Exception ex)
+                    {
+
+                        MessageBox.Show(ex.ToString());
+                    }
+                
                 }
             }
-             */
+
+            MessageBox.Show(byteValue.ToString());
             
+         /*
             if (cboClothes.SelectedItem.ToString() == malesClothes[0])
             {
                 byteValue = 00;
@@ -376,13 +391,23 @@ namespace PSU_Mod_Edit
             {
                 byteValue = 0x23;
             }
-             
+            
         }
 
        
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            /*
+            if (Process.GetProcessesByName("PsuIlluminus_Clementine").Length > 0)
+            {
+                MessageBox.Show("psu clem is already running");
+            }
+            else
+            {
+                Process.Start(@"C:\SEGA\PHANTASY STAR UNIVERSE Illuminus\PsuIlluminus_Clementine");
+
+            }
+             * */
             Process psu = Process.GetProcessesByName("PsuIlluminus_Clementine")[0];
             IntPtr Handle = OpenProcess(0x01F0FFF, false, psu.Id);
             int bytesWritten = 0;
@@ -393,15 +418,15 @@ namespace PSU_Mod_Edit
                 if (cboParts.SelectedItem.ToString() == "top")
                 {
 
-                    WriteProcessMemory((int)Handle, 0x0FA69B05, buffer, buffer.Length, ref bytesWritten);
+                    WriteProcessMemory((int)Handle, 0x05A26B05, buffer, buffer.Length, ref bytesWritten);
                 }
                 if (cboParts.SelectedItem.ToString() == "bottoms")
                 {
-                    WriteProcessMemory((int)Handle, 0x0FA69B09, buffer, buffer.Length, ref bytesWritten);
+                    WriteProcessMemory((int)Handle, 0x05788B09, buffer, buffer.Length, ref bytesWritten);
                 }
                 if (cboParts.SelectedItem.ToString() == "shoes")
                 {
-                    WriteProcessMemory((int)Handle, 0x0FA69B0D, buffer, buffer.Length, ref bytesWritten);
+                    WriteProcessMemory((int)Handle, 0x05788B0D, buffer, buffer.Length, ref bytesWritten);
                 }  
             }
             catch (Exception ex)
@@ -413,13 +438,7 @@ namespace PSU_Mod_Edit
         }            
         private void cboColor_MouseClick(object sender, MouseEventArgs e)
         {
-            ColorDialog colorDlg = new ColorDialog();                
-            if (colorDlg.ShowDialog()==DialogResult.OK)
-            {
-              
-               this.BackColor = colorDlg.Color;
-                
-            }
+            
 
         }
         private void chkMale_CheckedChanged(object sender, EventArgs e)
@@ -434,8 +453,9 @@ namespace PSU_Mod_Edit
             {
               clothesArray[i] = line;
                 i++;
-               
+              
             }
+           
             file.Close();
             BindingSource theBindingSource = new BindingSource();
             theBindingSource.DataSource = clothesArray;
@@ -458,36 +478,63 @@ namespace PSU_Mod_Edit
             AddClothes(@"aoti_colors.txt",aotiColors);
         }
 
-        private void cboColor_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void comboBox1_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             ColorDialog colorDlg = new ColorDialog();
             if (colorDlg.ShowDialog() == DialogResult.OK)
             {
 
+                this.BackColor = colorDlg.Color;
+
+            }
+        }
+
+        private void frmTitle_Load(object sender, EventArgs e)
+        {
+            toolTip1.SetToolTip(this.picColorWindow, "Change window color");
+            toolTip2.SetToolTip(this.picColorText,"Change text color");
+        }
+
+        private void picColorText_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDlg = new ColorDialog();
+            if (colorDlg.ShowDialog() == DialogResult.OK)
+            {
                 lblClothes.ForeColor = colorDlg.Color;
-                lblColor.ForeColor = colorDlg.Color;
                 lblGender.ForeColor = colorDlg.Color;
                 lblParts.ForeColor = colorDlg.Color;
-                namLbl.ForeColor = colorDlg.Color;
-                label1.ForeColor = colorDlg.Color;
-                label2.ForeColor = colorDlg.Color;
-                label3.ForeColor = colorDlg.Color;
                 chkAotiColors.ForeColor = colorDlg.Color;
                 chkFemale.ForeColor = colorDlg.Color;
                 chkFemaleParts.ForeColor = colorDlg.Color;
                 chkMaleParts.ForeColor = colorDlg.Color;
                 chkMale.ForeColor = colorDlg.Color;
             }
-        }         
+        }
+
+        private void sendReportsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fsr.Show();
+            fsr.TopMost = true;
+          
+
+        }
+
+        private void clementineSiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("http://psu-clementine.net");
+        }
+
+     
+    
+
+
+              
     }
 }
