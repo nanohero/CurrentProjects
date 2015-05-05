@@ -26,7 +26,7 @@ namespace PSU_Mod_Edit
        
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTitle());
+            Application.Run(new cboColor());
         }
     }
 }

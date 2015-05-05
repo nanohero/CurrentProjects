@@ -122,7 +122,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cboClothes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 172</value>
+    <value>53, 132</value>
   </data>
   <data name="cboClothes.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
@@ -141,14 +141,14 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cboClothes.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btnEdit.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btnEdit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 349</value>
+    <value>53, 349</value>
   </data>
   <data name="btnEdit.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 23</value>
@@ -169,7 +169,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnEdit.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="lblParts.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -178,7 +178,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblParts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>82, 45</value>
+    <value>50, 33</value>
   </data>
   <data name="lblParts.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 13</value>
@@ -199,7 +199,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblParts.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="cboParts.Items" xml:space="preserve">
     <value>None Slected</value>
@@ -214,7 +214,7 @@
     <value>shoes</value>
   </data>
   <data name="cboParts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 78</value>
+    <value>53, 61</value>
   </data>
   <data name="cboParts.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 21</value>
@@ -232,7 +232,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cboParts.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="lblClothes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -241,7 +241,7 @@
     <value>NoControl</value>
   </data>
   <data name="lblClothes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>98, 122</value>
+    <value>50, 103</value>
   </data>
   <data name="lblClothes.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 13</value>
@@ -262,37 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lblClothes.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lblGender.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lblGender.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lblGender.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 78</value>
-  </data>
-  <data name="lblGender.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 13</value>
-  </data>
-  <data name="lblGender.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="lblGender.Text" xml:space="preserve">
-    <value>Gender</value>
-  </data>
-  <data name="&gt;&gt;lblGender.Name" xml:space="preserve">
-    <value>lblGender</value>
-  </data>
-  <data name="&gt;&gt;lblGender.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblGender.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblGender.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="chkMale.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -301,7 +271,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkMale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 122</value>
+    <value>123, 54</value>
   </data>
   <data name="chkMale.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 17</value>
@@ -319,10 +289,10 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkMale.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkMale.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>1</value>
   </data>
   <data name="chkFemale.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -331,7 +301,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkFemale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 176</value>
+    <value>123, 100</value>
   </data>
   <data name="chkFemale.Size" type="System.Drawing.Size, System.Drawing">
     <value>60, 17</value>
@@ -349,10 +319,10 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkFemale.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkFemale.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -364,7 +334,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkMaleParts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 221</value>
+    <value>123, 143</value>
   </data>
   <data name="chkMaleParts.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 17</value>
@@ -382,7 +352,7 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkMaleParts.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkMaleParts.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -394,7 +364,7 @@
     <value>NoControl</value>
   </data>
   <data name="chkFemaleParts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 271</value>
+    <value>123, 166</value>
   </data>
   <data name="chkFemaleParts.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 17</value>
@@ -412,10 +382,10 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkFemaleParts.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkFemaleParts.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="chkAotiColors.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -424,16 +394,16 @@
     <value>NoControl</value>
   </data>
   <data name="chkAotiColors.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 337</value>
+    <value>123, 77</value>
   </data>
   <data name="chkAotiColors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 17</value>
+    <value>102, 17</value>
   </data>
   <data name="chkAotiColors.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
   <data name="chkAotiColors.Text" xml:space="preserve">
-    <value>Aoti Colors</value>
+    <value>Male Aoti Colors</value>
   </data>
   <data name="&gt;&gt;chkAotiColors.Name" xml:space="preserve">
     <value>chkAotiColors</value>
@@ -442,16 +412,16 @@
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;chkAotiColors.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;chkAotiColors.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="picColorWindow.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="picColorWindow.Location" type="System.Drawing.Point, System.Drawing">
-    <value>69, 238</value>
+    <value>53, 166</value>
   </data>
   <data name="picColorWindow.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 50</value>
@@ -472,7 +442,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;picColorWindow.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>138, 17</value>
@@ -481,7 +451,7 @@
     <value>NoControl</value>
   </data>
   <data name="picColorText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>149, 238</value>
+    <value>124, 166</value>
   </data>
   <data name="picColorText.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 50</value>
@@ -502,7 +472,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;picColorText.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <metadata name="toolTip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>235, 17</value>
@@ -510,29 +480,11 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>332, 17</value>
   </metadata>
-  <data name="clementineSiteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
-  </data>
-  <data name="clementineSiteToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clementine Site</value>
-  </data>
-  <data name="sendReportsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 22</value>
-  </data>
-  <data name="sendReportsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Send Reports</value>
-  </data>
-  <data name="informationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
-  </data>
-  <data name="informationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Information</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>416, 24</value>
+    <value>553, 24</value>
   </data>
   <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -550,7 +502,358 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
+  </data>
+  <data name="informationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 20</value>
+  </data>
+  <data name="informationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="clementineSiteToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="clementineSiteToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clementine Site</value>
+  </data>
+  <data name="sendReportsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="sendReportsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Send Reports</value>
+  </data>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>447, 17</value>
+  </metadata>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAq
+        CAAAAk1TRnQBSQFMAwEBAAEYAQABGAEAARABAAEQAQAE/wEJAQAI/wFCAU0BNgEEBgABNgEEAgABKAMA
+        AUADAAEQAwABAQEAAQgGAAEEGAABgAIAAYADAAKAAQABgAMAAYABAAGAAQACgAIAA8ABAAHAAdwBwAEA
+        AfABygGmAQABMwUAATMBAAEzAQABMwEAAjMCAAMWAQADHAEAAyIBAAMpAQADVQEAA00BAANCAQADOQEA
+        AYABfAH/AQACUAH/AQABkwEAAdYBAAH/AewBzAEAAcYB1gHvAQAB1gLnAQABkAGpAa0CAAH/ATMDAAFm
+        AwABmQMAAcwCAAEzAwACMwIAATMBZgIAATMBmQIAATMBzAIAATMB/wIAAWYDAAFmATMCAAJmAgABZgGZ
+        AgABZgHMAgABZgH/AgABmQMAAZkBMwIAAZkBZgIAApkCAAGZAcwCAAGZAf8CAAHMAwABzAEzAgABzAFm
+        AgABzAGZAgACzAIAAcwB/wIAAf8BZgIAAf8BmQIAAf8BzAEAATMB/wIAAf8BAAEzAQABMwEAAWYBAAEz
+        AQABmQEAATMBAAHMAQABMwEAAf8BAAH/ATMCAAMzAQACMwFmAQACMwGZAQACMwHMAQACMwH/AQABMwFm
+        AgABMwFmATMBAAEzAmYBAAEzAWYBmQEAATMBZgHMAQABMwFmAf8BAAEzAZkCAAEzAZkBMwEAATMBmQFm
+        AQABMwKZAQABMwGZAcwBAAEzAZkB/wEAATMBzAIAATMBzAEzAQABMwHMAWYBAAEzAcwBmQEAATMCzAEA
+        ATMBzAH/AQABMwH/ATMBAAEzAf8BZgEAATMB/wGZAQABMwH/AcwBAAEzAv8BAAFmAwABZgEAATMBAAFm
+        AQABZgEAAWYBAAGZAQABZgEAAcwBAAFmAQAB/wEAAWYBMwIAAWYCMwEAAWYBMwFmAQABZgEzAZkBAAFm
+        ATMBzAEAAWYBMwH/AQACZgIAAmYBMwEAA2YBAAJmAZkBAAJmAcwBAAFmAZkCAAFmAZkBMwEAAWYBmQFm
+        AQABZgKZAQABZgGZAcwBAAFmAZkB/wEAAWYBzAIAAWYBzAEzAQABZgHMAZkBAAFmAswBAAFmAcwB/wEA
+        AWYB/wIAAWYB/wEzAQABZgH/AZkBAAFmAf8BzAEAAcwBAAH/AQAB/wEAAcwBAAKZAgABmQEzAZkBAAGZ
+        AQABmQEAAZkBAAHMAQABmQMAAZkCMwEAAZkBAAFmAQABmQEzAcwBAAGZAQAB/wEAAZkBZgIAAZkBZgEz
+        AQABmQEzAWYBAAGZAWYBmQEAAZkBZgHMAQABmQEzAf8BAAKZATMBAAKZAWYBAAOZAQACmQHMAQACmQH/
+        AQABmQHMAgABmQHMATMBAAFmAcwBZgEAAZkBzAGZAQABmQLMAQABmQHMAf8BAAGZAf8CAAGZAf8BMwEA
+        AZkBzAFmAQABmQH/AZkBAAGZAf8BzAEAAZkC/wEAAcwDAAGZAQABMwEAAcwBAAFmAQABzAEAAZkBAAHM
+        AQABzAEAAZkBMwIAAcwCMwEAAcwBMwFmAQABzAEzAZkBAAHMATMBzAEAAcwBMwH/AQABzAFmAgABzAFm
+        ATMBAAGZAmYBAAHMAWYBmQEAAcwBZgHMAQABmQFmAf8BAAHMAZkCAAHMAZkBMwEAAcwBmQFmAQABzAKZ
+        AQABzAGZAcwBAAHMAZkB/wEAAswCAALMATMBAALMAWYBAALMAZkBAAPMAQACzAH/AQABzAH/AgABzAH/
+        ATMBAAGZAf8BZgEAAcwB/wGZAQABzAH/AcwBAAHMAv8BAAHMAQABMwEAAf8BAAFmAQAB/wEAAZkBAAHM
+        ATMCAAH/AjMBAAH/ATMBZgEAAf8BMwGZAQAB/wEzAcwBAAH/ATMB/wEAAf8BZgIAAf8BZgEzAQABzAJm
+        AQAB/wFmAZkBAAH/AWYBzAEAAcwBZgH/AQAB/wGZAgAB/wGZATMBAAH/AZkBZgEAAf8CmQEAAf8BmQHM
+        AQAB/wGZAf8BAAH/AcwCAAH/AcwBMwEAAf8BzAFmAQAB/wHMAZkBAAH/AswBAAH/AcwB/wEAAv8BMwEA
+        AcwB/wFmAQAC/wGZAQAC/wHMAQACZgH/AQABZgH/AWYBAAFmAv8BAAH/AmYBAAH/AWYB/wEAAv8BZgEA
+        ASEBAAGlAQADXwEAA3cBAAOGAQADlgEAA8sBAAOyAQAD1wEAA90BAAPjAQAD6gEAA/EBAAP4AQAB8AH7
+        Af8BAAGkAqABAAOAAwAB/wIAAf8DAAL/AQAB/wMAAf8BAAH/AQAC/wIAA/8BAAH/CbcBbQX/MAAC/wHS
+        Av8B0gH/AbcC/wEUARsE/zAAAfYI/wEUARMBGwT/MAAC/wEbAfQE/wETARQDGwH/AbcB9DAABP8B9AH/
+        AfQBGgEVAREBHAS9AfMwAAL/Ab0B/wK9Ae8C2wG0AdsEvQGaMAABGwL0ARsBGgG9AfEB/wEZAcMCtAG9
+        AZkBbgF6MAAB8wO9ARIBFgH/AdwBvAG9AdUB4wEaARYBFwH0MAAC/wL0AewB6wEJAfQC/wK0AhcBBwEW
+        MAAD/wHDAZoB4wT/ArQEFzAABP8B8QH/ARkC2wFmAdsCHAHsAQcB9zAAA/8BBwH/AfYBwwH2AewB9wL/
+        AfQB8wL/MAAF/wHvAcMB7QHrARUBFAFtBP8wAAFuBP8BkwJtAeoB7AESBP8B9DAAAf8B9AT/AuoCbQb/
+        MAAB9AHyBP8B9An/MAABQgFNAT4HAAE+AwABKAMAAUADAAEQAwABAQEAAQEFAAGAFwAD/4EACw==
+</value>
+  </data>
+  <data name="chkFemaleAoti.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkFemaleAoti.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="chkFemaleAoti.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 120</value>
+  </data>
+  <data name="chkFemaleAoti.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 17</value>
+  </data>
+  <data name="chkFemaleAoti.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="chkFemaleAoti.Text" xml:space="preserve">
+    <value>Female  Aoti Colors</value>
+  </data>
+  <data name="&gt;&gt;chkFemaleAoti.Name" xml:space="preserve">
+    <value>chkFemaleAoti</value>
+  </data>
+  <data name="&gt;&gt;chkFemaleAoti.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkFemaleAoti.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;chkFemaleAoti.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 122</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 250</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Clothes type selection</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;chkCast.Name" xml:space="preserve">
+    <value>chkCast</value>
+  </data>
+  <data name="&gt;&gt;chkCast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkCast.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;chkCast.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;chkNewman.Name" xml:space="preserve">
+    <value>chkNewman</value>
+  </data>
+  <data name="&gt;&gt;chkNewman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkNewman.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;chkNewman.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;chkBeast.Name" xml:space="preserve">
+    <value>chkBeast</value>
+  </data>
+  <data name="&gt;&gt;chkBeast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkBeast.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;chkBeast.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;chkHuman.Name" xml:space="preserve">
+    <value>chkHuman</value>
+  </data>
+  <data name="&gt;&gt;chkHuman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkHuman.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;chkHuman.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 45</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 62</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Races</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkCast.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkCast.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 20</value>
+  </data>
+  <data name="chkCast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 17</value>
+  </data>
+  <data name="chkCast.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="chkCast.Text" xml:space="preserve">
+    <value>Cast</value>
+  </data>
+  <data name="&gt;&gt;chkCast.Name" xml:space="preserve">
+    <value>chkCast</value>
+  </data>
+  <data name="&gt;&gt;chkCast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkCast.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;chkCast.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="chkNewman.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkNewman.Location" type="System.Drawing.Point, System.Drawing">
+    <value>156, 19</value>
+  </data>
+  <data name="chkNewman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 17</value>
+  </data>
+  <data name="chkNewman.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chkNewman.Text" xml:space="preserve">
+    <value>Newman</value>
+  </data>
+  <data name="&gt;&gt;chkNewman.Name" xml:space="preserve">
+    <value>chkNewman</value>
+  </data>
+  <data name="&gt;&gt;chkNewman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkNewman.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;chkNewman.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="chkBeast.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkBeast.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="chkBeast.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 17</value>
+  </data>
+  <data name="chkBeast.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="chkBeast.Text" xml:space="preserve">
+    <value>Beast</value>
+  </data>
+  <data name="&gt;&gt;chkBeast.Name" xml:space="preserve">
+    <value>chkBeast</value>
+  </data>
+  <data name="&gt;&gt;chkBeast.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkBeast.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;chkBeast.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chkHuman.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkHuman.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 20</value>
+  </data>
+  <data name="chkHuman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 17</value>
+  </data>
+  <data name="chkHuman.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="chkHuman.Text" xml:space="preserve">
+    <value>Human</value>
+  </data>
+  <data name="&gt;&gt;chkHuman.Name" xml:space="preserve">
+    <value>chkHuman</value>
+  </data>
+  <data name="&gt;&gt;chkHuman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkHuman.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;chkHuman.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Color.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Color.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Color.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 246</value>
+  </data>
+  <data name="Color.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="Color.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="Color.Text" xml:space="preserve">
+    <value>Colors:</value>
+  </data>
+  <data name="&gt;&gt;Color.Name" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="&gt;&gt;Color.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Color.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Color.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cboColor1.Items" xml:space="preserve">
+    <value>select a checkbox</value>
+  </data>
+  <data name="cboColor1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 275</value>
+  </data>
+  <data name="cboColor1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cboColor1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;cboColor1.Name" xml:space="preserve">
+    <value>cboColor1</value>
+  </data>
+  <data name="&gt;&gt;cboColor1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cboColor1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cboColor1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -571,7 +874,7 @@
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>416, 412</value>
+    <value>553, 391</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1747,8 +2050,14 @@
   <data name="&gt;&gt;sendReportsToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>frmTitle</value>
+    <value>cboColor</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
