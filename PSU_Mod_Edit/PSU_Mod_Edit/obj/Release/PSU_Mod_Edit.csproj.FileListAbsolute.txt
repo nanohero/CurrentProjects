@@ -1,0 +1,13 @@
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\bin\Release\PSU_Mod_Edit.exe.config
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\bin\Release\PSU_Mod_Edit.exe
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\bin\Release\PSU_Mod_Edit.pdb
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\bin\Release\af\PSU_Mod_Edit.resources.dll
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Release\PSU_Mod_Edit.csprojResolveAssemblyReference.cache
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Release\PSU_Mod_Edit.frmMain.resources
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Release\PSU_Mod_Edit.FrmSendReports.resources
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Release\PSU_Mod_Edit.Properties.Resources.resources
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Release\PSU_Mod_Edit.frmMain.af.resources
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Release\PSU_Mod_Edit.csproj.GenerateResource.Cache
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Release\af\PSU_Mod_Edit.resources.dll
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Release\PSU_Mod_Edit.exe
+C:\Users\nanohero\Documents\GitHub\CurrentProjects\PSU_Mod_Edit\PSU_Mod_Edit\obj\Release\PSU_Mod_Edit.pdb
